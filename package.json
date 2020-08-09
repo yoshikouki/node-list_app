@@ -1,0 +1,19 @@
+{
+  "name": "list_app",
+  "version": "1.0.0",
+  "description": "これはnode.js勉強用のリポジトリです",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yoshikouki/node-list_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoshikouki/node-list_app/issues"
+  },
+  "homepage": "https://github.com/yoshikouki/node-list_app#readme"
+}
