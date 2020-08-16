@@ -36,9 +36,19 @@ app.get('/new', (req, res) => {
 
 app.post('/create', (req, res) => {
   connection.query(
-    'insert into items (name) values (?)',
+    'INSERT INTO items (name) VALUES (?)',
     [req.body.itemName],
     (error, results) => {
+      res.redirect('/index');
+    }
+  );
+});
+
+app.post('/delete/:id', (req, res) => {
+  connection.query(
+    'DELETE FROM items WHERE id = ?',
+    [req.params.id],
+    (error, results)  => {
       res.redirect('/index');
     }
   );
